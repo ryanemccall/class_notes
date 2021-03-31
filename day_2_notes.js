@@ -12,3 +12,4 @@
 // Go to github.com and click create repository 
 //name it and leave it public
 // copy the url and use git remote add origin <url>
+let age = 10; //adding code just to have some
