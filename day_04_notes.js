@@ -14,5 +14,18 @@ let arr = [];//not hardcoded because it is empty
 console.log(name);
 var name = 'Ryan';
 //will report undefined instead of an error
-console.log(name);
+console.log(name); //this will return Ryan
 
+//FUNCTIONS
+//block of code designed to perform a specific task
+
+//Scope
+//hierarcy of variables in our code can be global, local, parent, and child
+
+let coffeeOrigin = 'Ethiopia' //global scope
+
+var x = 12; //global
+function scope(){
+    x = 33; //local
+    console.log(x);
+}
