@@ -92,3 +92,14 @@ let manager ={
     }
 }
 console.log(manager.setAge()); //returns NaN because of scope (before we add the 'THIS' function)
+
+let manager ={
+    firstName: 'Brad',
+    lastName: 'Titus',
+    birthYear: 1993,
+    setAge: function () {
+        this.age = 2021 -this.birthYear
+    }
+    }
+    manager.setAge()
+    console.log(manager)
