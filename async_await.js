@@ -86,8 +86,16 @@ let json = '{"age":30}'
 
 try {
     let user = JSON.parse(json)
-    if (user.name) {
+    if (!user.name) {
         throw new SyntaxError('Incomplete data: no name')
     }
+} catch(e) {
+    console.log(`JSON Error: ${e}`)
 }
-console.log(user.name)
+
+function upperCase(name) {
+    if(typeof name !== "string") {
+        throw TypeError("Name must be a string")
+    }
+    return name.toUpperCase();
+}
